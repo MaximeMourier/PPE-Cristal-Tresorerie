@@ -10,5 +10,7 @@ package controller;
  * @author user
  */
 public class Main {
-    
+    public static void main() {
+        
+    }
 }
