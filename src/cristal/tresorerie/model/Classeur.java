@@ -1,5 +1,5 @@
 
-package Model;
+package cristal.tresorerie.model;
 
 import java.util.ArrayList;
 import java.util.List;

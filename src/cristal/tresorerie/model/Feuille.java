@@ -1,4 +1,4 @@
-package Model;
+package cristal.tresorerie.model;
 
 public class Feuille {
     //1. ATTRIBUTS
