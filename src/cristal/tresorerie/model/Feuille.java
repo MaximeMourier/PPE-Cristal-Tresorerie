@@ -1,52 +1,43 @@
 package cristal.tresorerie.model;
 
-public class Feuille {
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+public abstract class Feuille implements InterfaceFeuille {
+    
     //1. ATTRIBUTS
-
     private String nom; //nom de la feuille (ex: Compte_Resultat, Bilan...)
-    private int lignes;
-    private int colonnes;
-    private double[][] tableau; //une feuille Excel est un tableau de cellules
-
-    //2. CONSTRUCTEUR
-    public Feuille(String nom, int L, int C) {
-        this.nom = nom;
-        //allocation du tableau connaissant son nombre de lignes et de colonnes
-        this.lignes = L;
-        this.colonnes = C;
-        this.tableau = new double[lignes][colonnes];
+    private HSSFSheet Sheet;
+    
+    //2. CONSTRUCTEUR   
+    public Feuille(String N, int L, int C, Workbook wb) {
+        this.nom = N;
+            
+        this.Sheet = (HSSFSheet) wb.createSheet(N); //instancie une HSSFSheet, du nom "N" à partir du Workbook wb
+       
     }
 
     //3. SETTERS & GETTERS
+    @Override
     public void setNom(String nom) {
         this.nom = nom;
     }
 
+    @Override
     public String getNom() {
         return this.nom;
     }
 
-    public void setLignes(int L) {
-        this.lignes = L;
+
+    @Override
+    public HSSFSheet getSheet() {
+        return Sheet;
     }
 
-    public int getLignes() {
-        return this.lignes;
-    }
-
-    public int getColonnes() {
-        return this.colonnes;
-    }
-
-    public void setColonnes(int C) {
-        this.colonnes = C;
-    }
-
-    public double[][] getTableau() {
-        return tableau;
-    }
-
-    public void setTableau(int L, int C) {
-        this.tableau = new double[L][C];
+    @Override
+    public void setSheet(HSSFSheet Sheet) {
+        this.Sheet = Sheet;
     }
 }
