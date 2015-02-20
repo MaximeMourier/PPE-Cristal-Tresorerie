@@ -8,6 +8,6 @@ package cristal.tresorerie.model;
  *
  * @author louislespagnol
  */
-public class Produits extends Feuille {
+public class Produits {
     
 }

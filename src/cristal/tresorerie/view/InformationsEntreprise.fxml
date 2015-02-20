@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Type">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="44.0" prefHeight="22.0" prefWidth="127.0" text="Nombre d'employés:" />
+                        <TextField layoutX="267.0" layoutY="42.0" prefHeight="26.0" prefWidth="66.0" />
+                        <Label layoutX="58.0" layoutY="153.0" text="Chiffre d'affaires:" />
+                        <RadioButton layoutX="235.0" layoutY="112.0" mnemonicParsing="false" text="&lt;2 Millions €" />
+                        <RadioButton layoutX="235.0" layoutY="152.0" mnemonicParsing="false" text="Entre 2 Millions et 20 Millions €" />
+                        <RadioButton layoutX="235.0" layoutY="191.0" mnemonicParsing="false" text="&gt; 2 Millions €" />
+                        <DatePicker layoutX="267.0" layoutY="261.0" />
+                        <Label layoutX="58.0" layoutY="266.0" text="Date de Création" />
+                        <Button layoutX="523.0" layoutY="327.0" mnemonicParsing="false" text="Suivant" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Immobilier">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="67.0" layoutY="61.0" text="Vous êtes?" />
+                        <RadioButton layoutX="100.0" layoutY="112.0" mnemonicParsing="false" text="Propriétaire" />
+                        <RadioButton layoutX="100.0" layoutY="166.0" mnemonicParsing="false" text="Locataire" />
+                        <Label layoutX="284.0" layoutY="113.0" text="Valeur/ Prix d'achat (€):" />
+                        <TextField layoutX="464.0" layoutY="108.0" prefHeight="26.0" prefWidth="72.0" />
+                        <Label layoutX="284.0" layoutY="167.0" text="Loyer mensuel (€):" />
+                        <TextField layoutX="464.0" layoutY="162.0" prefHeight="26.0" prefWidth="72.0" />
+                        <Button layoutX="523.0" layoutY="327.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="425.0" layoutY="327.0" mnemonicParsing="false" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Activité">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="422.0" layoutY="327.0" mnemonicParsing="false" text="Précédent" />
+                        <Button layoutX="523.0" layoutY="327.0" mnemonicParsing="false" text="Suivant" />
+                        <Label layoutX="62.0" layoutY="46.0" text="Production de:" />
+                        <RadioButton layoutX="113.0" layoutY="81.0" mnemonicParsing="false" text="Biens" />
+                        <RadioButton layoutX="113.0" layoutY="116.0" mnemonicParsing="false" text="Services" />
+                        <Label layoutX="216.0" layoutY="184.0" text="Production linéaire?" />
+                        <RadioButton layoutX="260.0" layoutY="218.0" mnemonicParsing="false" text="Oui" />
+                        <RadioButton layoutX="260.0" layoutY="255.0" mnemonicParsing="false" text="Non" />
+                        <RadioButton layoutX="391.0" layoutY="116.0" mnemonicParsing="false" text="Non" />
+                        <RadioButton layoutX="391.0" layoutY="81.0" mnemonicParsing="false" text="Oui" />
+                        <Label layoutX="334.0" layoutY="46.0" text="Production à flux tendus? (pas de stock)" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Délais">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="523.0" layoutY="327.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="427.0" layoutY="327.0" mnemonicParsing="false" text="Précédent" />
+                        <Label layoutX="59.0" layoutY="39.0" text="Délai de règlement des fournisseurs:" />
+                        <Slider layoutX="167.0" layoutY="93.0" max="90.0" showTickLabels="true" showTickMarks="true" value="45.0" />
+                        <Label layoutX="333.0" layoutY="93.0" text="(en nombre de jours)" />
+                        <Slider layoutX="167.0" layoutY="238.0" max="90.0" showTickLabels="true" showTickMarks="true" value="45.0" />
+                        <Label layoutX="333.0" layoutY="238.0" text="(en nombre de jours)" />
+                        <Label layoutX="59.0" layoutY="184.0" text="Délai de paiement des clients" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -8,7 +8,7 @@ package cristal.tresorerie.model;
  *
  * @author louislespagnol
  */
-public class Charges extends Feuille {
+public class Charges {
     //constructeur 
-    public Charges ();
+    
 }
