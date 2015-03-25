@@ -8,31 +8,20 @@
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab styleClass="myTab" text="Créances">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="618.0" styleClass="myAnchorPane">
+            <Tab styleClass="myTab" text="Créances">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
-                        <Button layoutX="23.0" layoutY="68.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
-                        <Button layoutX="23.0" layoutY="122.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
-                        <Label layoutX="197.0" layoutY="19.0" styleClass="myLabel" text="Type:" />
-                        <Label layoutX="197.0" layoutY="73.0" styleClass="myLabel" text="Nom :" />
-                        <Label layoutX="197.0" layoutY="127.0" styleClass="myLabel" text="Montant à recevoir:" />
-                        <ComboBox editable="true" layoutX="374.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
-                        <TextField layoutX="368.0" layoutY="68.0" styleClass="myTextField" />
-                        <TextField layoutX="368.0" layoutY="122.0" styleClass="myTextField" />
-                        <TableView layoutX="4.0" layoutY="169.0" prefHeight="158.0" prefWidth="592.0" styleClass="myTableView">
-                          <columns>
-                            <TableColumn prefWidth="171.0" styleClass="myTableColumn" text="Type" />
-                            <TableColumn prefWidth="201.0" styleClass="myTableColumn" text="Nom" />
-                              <TableColumn prefWidth="219.0" styleClass="myTableColumn" text="Montant à recevoir" />
-                          </columns>
-                        </TableView>
-                        <Button layoutX="531.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Label layoutX="56.0" layoutY="67.0" styleClass="myLabel" text="Avez vous des créances à recevoir auprès de certains clients?" />
+                        <RadioButton layoutX="56.0" layoutY="119.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="176.0" layoutY="119.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="56.0" layoutY="184.0" styleClass="myLabel" text="Si oui, précisez le montant total:" />
+                        <TextField layoutX="342.0" layoutY="179.0" styleClass="myTextField" />
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
+              </content>
+            </Tab>
           <Tab styleClass="myTab" text="Dettes">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
@@ -43,10 +32,10 @@
                         <Label layoutX="202.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
                         <Label layoutX="202.0" layoutY="75.0" styleClass="myLabel" text="Nom:" />
                         <Label layoutX="205.0" layoutY="129.0" styleClass="myLabel" text="Montant à rembourser:" />
-                        <ComboBox editable="true" layoutX="355.0" layoutY="15.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
-                        <TextField layoutX="349.0" layoutY="70.0" styleClass="myTextField" />
-                        <TextField layoutX="349.0" layoutY="124.0" styleClass="myTextField" />
-                        <TableView layoutX="6.0" layoutY="167.0" prefHeight="158.0" prefWidth="590.0" styleClass="myTableView">
+                        <ComboBox editable="true" layoutX="383.0" layoutY="16.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <TextField layoutX="377.0" layoutY="71.0" styleClass="myTextField" />
+                        <TextField layoutX="377.0" layoutY="125.0" styleClass="myTextField" />
+                        <TableView layoutX="6.0" layoutY="196.0" prefHeight="129.0" prefWidth="590.0" styleClass="myTableView">
                           <columns>
                             <TableColumn prefWidth="167.0" styleClass="myTableColumn" text="Type" />
                             <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Nom" />
