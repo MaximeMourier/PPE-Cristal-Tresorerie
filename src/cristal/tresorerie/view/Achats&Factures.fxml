@@ -8,7 +8,33 @@
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab styleClass="myTab" text="Frais mensuels">
+            <Tab styleClass="myTab" text="Mes Achats">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="600.0">
+                     <children>
+                        <Button layoutX="28.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Button layoutX="28.0" layoutY="79.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                        <Button layoutX="28.0" layoutY="136.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                        <Label layoutX="223.0" layoutY="27.0" styleClass="myLabel" text="Type:" />
+                        <Label layoutX="223.0" layoutY="84.0" styleClass="myLabel" text="Nom:" />
+                        <Label layoutX="223.0" layoutY="141.0" styleClass="myLabel" text="Montant:" />
+                        <ComboBox editable="true" layoutX="384.0" layoutY="22.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComBox" />
+                        <TextField layoutX="378.0" layoutY="79.0" styleClass="myTextField" />
+                        <TextField layoutX="378.0" layoutY="136.0" styleClass="myTextField" />
+                        <TableView layoutX="9.0" layoutY="184.0" prefHeight="125.0" prefWidth="579.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="158.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="204.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Montant" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="434.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab styleClass="myTab" text="Frais (Energie &amp; communication) ">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="618.0" styleClass="myAnchorPane">
                      <children>
@@ -33,7 +59,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab styleClass="myTab" text="Contrats d'Assurance (annuels)">
+          <Tab styleClass="myTab" text="Assurance (annuels)">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
                      <children>
@@ -59,49 +85,23 @@
                   </AnchorPane>
             </content>
           </Tab>
-            <Tab styleClass="myTab" text="Impôts (annuels)">
+            <Tab styleClass="myTab" text="Impôts &amp; Escomptes">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
                      <children>
-                        <Label layoutX="80.0" layoutY="31.0" styleClass="myLabel" text="Êtes-vous soumis à l'impôt sur les sociétés (IS)?" />
-                        <RadioButton layoutX="80.0" layoutY="75.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="199.0" layoutY="75.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Label layoutX="80.0" layoutY="125.0" styleClass="myLabel" text="Si oui, précisez le pourcentage (sur le Résultat Net)" />
-                        <TextField layoutX="394.0" layoutY="120.0" styleClass="myTextField" />
-                        <Label layoutX="80.0" layoutY="186.0" styleClass="myLabel" text="Devez vous payer d'autres impots (ou assimilés)?" />
-                        <RadioButton layoutX="80.0" layoutY="229.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="202.0" layoutY="229.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Label layoutX="80.0" layoutY="275.0" styleClass="myLabel" text="Si oui, précisez le montant annuel:" />
-                        <TextField layoutX="394.0" layoutY="270.0" styleClass="myTextField" />
+                        <Label layoutX="42.0" layoutY="30.0" styleClass="myLabel" text="Êtes-vous soumis à l'impôt sur les sociétés (IS)?" />
+                        <RadioButton layoutX="42.0" layoutY="74.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="161.0" layoutY="74.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="42.0" layoutY="120.0" styleClass="myLabel" text="Si oui, précisez le pourcentage (sur le Résultat Net)" />
                         <Button layoutX="529.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                         <Button layoutX="436.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                        <Label layoutX="40.0" layoutY="176.0" text="Avez vous obtenu des escomptes (réduction financière grâce à un règlement anticipé) ?" />
+                        <RadioButton layoutX="40.0" layoutY="225.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="163.0" layoutY="225.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Slider layoutX="389.0" layoutY="120.0" styleClass="mySlider" />
+                        <Label layoutX="42.0" layoutY="272.0" styleClass="myLabel" text="Si oui, indiquez le montant total:" />
+                        <TextField layoutX="378.0" layoutY="267.0" styleClass="myTextField" />
                      </children></AnchorPane>
-              </content>
-            </Tab>
-            <Tab styleClass="myTab" text="Mes Achats">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="600.0">
-                     <children>
-                        <Button layoutX="28.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
-                        <Button layoutX="28.0" layoutY="79.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
-                        <Button layoutX="28.0" layoutY="136.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
-                        <Label layoutX="223.0" layoutY="27.0" styleClass="myLabel" text="Type:" />
-                        <Label layoutX="223.0" layoutY="84.0" styleClass="myLabel" text="Nom:" />
-                        <Label layoutX="223.0" layoutY="141.0" styleClass="myLabel" text="Montant:" />
-                        <ComboBox editable="true" layoutX="384.0" layoutY="22.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComBox" />
-                        <TextField layoutX="378.0" layoutY="79.0" styleClass="myTextField" />
-                        <TextField layoutX="378.0" layoutY="136.0" styleClass="myTextField" />
-                        <TableView layoutX="9.0" layoutY="184.0" prefHeight="125.0" prefWidth="579.0" styleClass="myTableView">
-                          <columns>
-                            <TableColumn prefWidth="158.0" styleClass="myTableColumn" text="Type" />
-                            <TableColumn prefWidth="204.0" styleClass="myTableColumn" text="Nom" />
-                              <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Montant" />
-                          </columns>
-                        </TableView>
-                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button layoutX="434.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
-                     </children>
-                  </AnchorPane>
               </content>
             </Tab>
         </tabs>

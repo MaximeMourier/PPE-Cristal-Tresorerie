@@ -57,14 +57,16 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="35.0" layoutY="43.0" styleClass="myLabel" text="Montant des charges sociales (liées aux salaires, congés payés etc):" />
-                        <Label layoutX="35.0" layoutY="134.0" styleClass="myLabel" text="Montant des charges patronales (URSSAF, mutuelles, retraites etc):" />
-                        <TextField layoutX="376.0" layoutY="81.0" styleClass="myTextField" />
-                        <TextField layoutX="376.0" layoutY="171.0" styleClass="myTextField" />
-                        <Label layoutX="35.0" layoutY="224.0" styleClass="myLabel" text="Frais de déplacements pour mission des employés (transports, hotels etc):" />
-                        <TextField layoutX="376.0" layoutY="260.0" styleClass="myTextField" />
+                        <Label layoutX="34.0" layoutY="21.0" styleClass="myLabel" text="Montant des charges sociales (liées aux salaires, congés payés etc):" />
+                        <Label layoutX="34.0" layoutY="94.0" styleClass="myLabel" text="Montant des charges patronales (URSSAF, mutuelles, retraites etc):" />
+                        <TextField layoutX="375.0" layoutY="44.0" styleClass="myTextField" />
+                        <TextField layoutX="375.0" layoutY="118.0" styleClass="myTextField" />
+                        <Label layoutX="34.0" layoutY="168.0" styleClass="myLabel" text="Frais de déplacements pour mission des employés (transports, hotels etc):" />
+                        <TextField layoutX="375.0" layoutY="193.0" styleClass="myTextField" />
                         <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                         <Button layoutX="436.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                        <Label layoutX="34.0" layoutY="238.0" styleClass="myLabel" text="Impots sur salaires et versements assimilés:" />
+                        <TextField layoutX="375.0" layoutY="260.0" styleClass="myTextField" />
                      </children>
                   </AnchorPane>
               </content>
