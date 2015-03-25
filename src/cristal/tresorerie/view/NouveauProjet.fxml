@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="238.0" layoutY="89.0" styleClass="myLabel" text="Choisissez un Mode:" />
+      <Button layoutX="73.0" layoutY="174.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" styleClass="myButton" text="Mode Avancé" />
+      <Button layoutX="73.0" layoutY="259.0" mnemonicParsing="false" styleClass="myButton" text="Mode Pas à Pas" />
+      <Label layoutX="266.0" layoutY="179.0" styleClass="myLabel" text="Ouverte directe du tableur Excel" />
+      <Label layoutX="266.0" layoutY="264.0" styleClass="myLabel" text="Laissez vous guider par Crystal Trésorerie" />
+   </children>
+</Pane>

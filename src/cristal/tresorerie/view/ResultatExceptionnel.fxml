@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="myTab" text="Produits exceptionnels">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="618.0" styleClass="myAnchorPane">
+                     <children>
+                        <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Button layoutX="23.0" layoutY="68.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                        <Button layoutX="23.0" layoutY="122.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                        <Label layoutX="197.0" layoutY="19.0" styleClass="myLabel" text="Type:" />
+                        <Label layoutX="197.0" layoutY="73.0" styleClass="myLabel" text="Nom :" />
+                        <Label layoutX="197.0" layoutY="127.0" styleClass="myLabel" text="Résultat occasionné:" />
+                        <ComboBox editable="true" layoutX="374.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <TextField layoutX="368.0" layoutY="68.0" styleClass="myTextField" />
+                        <TextField layoutX="368.0" layoutY="122.0" styleClass="myTextField" />
+                        <TableView layoutX="4.0" layoutY="169.0" prefHeight="158.0" prefWidth="592.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="171.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="201.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="219.0" styleClass="myTableColumn" text="Montant à recevoir" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="531.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab styleClass="myTab" text="Charges exceptionnelles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
+                     <children>
+                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Button layoutX="25.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                        <Button layoutX="25.0" layoutY="123.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                        <Label layoutX="184.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
+                        <Label layoutX="184.0" layoutY="75.0" styleClass="myLabel" text="Nom:" />
+                        <Label layoutX="184.0" layoutY="129.0" styleClass="myLabel" text="Montant à rembourser:" />
+                        <ComboBox editable="true" layoutX="355.0" layoutY="15.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <TextField layoutX="349.0" layoutY="70.0" styleClass="myTextField" />
+                        <TextField layoutX="349.0" layoutY="124.0" styleClass="myTextField" />
+                        <TableView layoutX="6.0" layoutY="167.0" prefHeight="158.0" prefWidth="590.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="167.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="206.0" styleClass="myTableColumn" text="Montant à rembourser:" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="431.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

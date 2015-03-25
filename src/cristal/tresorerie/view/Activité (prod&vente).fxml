@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Activité">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="23.0" layoutY="140.0" mnemonicParsing="false" text="Ajouter" />
+                        <ComboBox editable="true" layoutX="389.0" layoutY="48.0" prefWidth="150.0" promptText="Choisissez" />
+                        <TextField layoutX="383.0" layoutY="107.0" />
+                        <TextField layoutX="383.0" layoutY="166.0" />
+                        <TextField layoutX="383.0" layoutY="231.0" />
+                        <Label layoutX="177.0" layoutY="53.0" text="Type:" />
+                        <Label layoutX="177.0" layoutY="112.0" text="Coût de production/achat:" />
+                        <Label layoutX="177.0" layoutY="171.0" text="Recettes des ventes:" />
+                        <Label layoutX="177.0" layoutY="236.0" text="Quantité:" />
+                        <Button layoutX="529.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Total">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="17.0" layoutY="21.0" prefHeight="294.0" prefWidth="567.0">
+                          <columns>
+                            <TableColumn prefWidth="99.0" text="Type" />
+                            <TableColumn prefWidth="157.0" text="Coût de production" />
+                              <TableColumn prefWidth="158.0" text="Prix de vente" />
+                              <TableColumn minWidth="0.0" prefWidth="152.0" text="Quantité" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="437.0" layoutY="333.0" mnemonicParsing="false" text="Précédent" />
+                        <Button layoutX="17.0" layoutY="320.0" mnemonicParsing="false" text="Modifier" />
+                        <Button layoutX="105.0" layoutY="320.0" mnemonicParsing="false" text="Supprimer" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab styleClass="myTab" text="Sous-traitance &amp; Marketing">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
+                     <children>
+                        <Label layoutX="98.0" layoutY="32.0" styleClass="myLabel" text="Sous-traitez vous une partie de votre activité?" />
+                        <RadioButton layoutX="130.0" layoutY="81.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="362.0" layoutY="81.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Button layoutX="529.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button id="myButton" layoutX="433.0" layoutY="333.0" mnemonicParsing="false" text="Précédent" />
+                        <Label layoutX="98.0" layoutY="128.0" styleClass="myLabel" text="Si oui, précisez le montant total ici:" />
+                        <TextField layoutX="330.0" layoutY="123.0" styleClass="myTextField" />
+                        <Label layoutX="98.0" layoutY="184.0" text="Consacrez vous une partie de vos fonds à la communication &amp; publicité?" />
+                        <RadioButton layoutX="130.0" layoutY="240.0" mnemonicParsing="false" text="Oui" />
+                        <RadioButton layoutX="362.0" layoutY="240.0" mnemonicParsing="false" text="Non" />
+                        <Label layoutX="98.0" layoutY="283.0" text="Si oui, précisez le montant ici:" />
+                        <TextField layoutX="330.0" layoutY="278.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

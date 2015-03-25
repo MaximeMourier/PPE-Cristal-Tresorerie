@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="myTab" text="Employés">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="24.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Label layoutX="189.0" layoutY="67.0" styleClass="myLabel" text="Nom du poste:" />
+                        <Label layoutX="189.0" layoutY="159.0" styleClass="myLabel" text="Salaire brut annuel (partie fixe):" />
+                        <Label layoutX="191.0" layoutY="216.0" styleClass="myLabel" text="Ce poste perçoit-il des commissions?" />
+                        <Label layoutX="191.0" layoutY="277.0" styleClass="myLabel" text="Si oui, saisissez le pourcentage:" />
+                        <TextField layoutX="413.0" layoutY="62.0" styleClass="myTextField" />
+                        <TextField layoutX="413.0" layoutY="154.0" styleClass="myTextField" />
+                        <RadioButton layoutX="460.0" layoutY="207.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="460.0" layoutY="237.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Slider layoutX="427.0" layoutY="277.0" styleClass="mySlider" value="5.0" />
+                        <Button layoutX="523.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Label layoutX="189.0" layoutY="19.0" styleClass="myLabel" text="Type de contrat:" />
+                        <ComboBox editable="true" layoutX="420.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <Label layoutX="189.0" layoutY="112.0" text="Nombre d'employés à ce poste:" />
+                        <TextField layoutX="413.0" layoutY="107.0" />
+                        <Label layoutX="189.0" layoutY="176.0" text="(Intérim: montant versé à la société)" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab styleClass="myTab" text="Total">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="5.0" layoutY="8.0" prefHeight="311.0" prefWidth="590.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="113.0" styleClass="myTableColumn" text="Type de contrat" />
+                            <TableColumn prefWidth="92.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="134.0" styleClass="myTableColumn" text="Salaire brut annuel" />
+                              <TableColumn minWidth="0.0" prefWidth="107.0" styleClass="myTableColumn" text="Commissions" />
+                              <TableColumn prefWidth="143.0" text="Nombre d'employés" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="523.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="429.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                        <Button layoutX="28.0" layoutY="334.0" mnemonicParsing="false" text="Modifier" />
+                        <Button layoutX="106.0" layoutY="334.0" mnemonicParsing="false" text="Suppprimer" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="myTab" text="Charges de Personnel &amp; Dépenses associées">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="43.0" styleClass="myLabel" text="Montant des charges sociales (liées aux salaires, congés payés etc):" />
+                        <Label layoutX="35.0" layoutY="134.0" styleClass="myLabel" text="Montant des charges patronales (URSSAF, mutuelles, retraites etc):" />
+                        <TextField layoutX="376.0" layoutY="81.0" styleClass="myTextField" />
+                        <TextField layoutX="376.0" layoutY="171.0" styleClass="myTextField" />
+                        <Label layoutX="35.0" layoutY="224.0" styleClass="myLabel" text="Frais de déplacements pour mission des employés (transports, hotels etc):" />
+                        <TextField layoutX="376.0" layoutY="260.0" styleClass="myTextField" />
+                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="436.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
