@@ -22,7 +22,7 @@
                   </AnchorPane>
               </content>
             </Tab>
-          <Tab styleClass="myTab" text="Dettes">
+          <Tab styleClass="myTab" text="Dettes fournisseurs et emprunts">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
                      <children>
@@ -30,20 +30,23 @@
                         <Button layoutX="25.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
                         <Button layoutX="25.0" layoutY="123.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
                         <Label layoutX="202.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
-                        <Label layoutX="202.0" layoutY="75.0" styleClass="myLabel" text="Nom:" />
-                        <Label layoutX="205.0" layoutY="129.0" styleClass="myLabel" text="Montant à rembourser:" />
+                        <Label layoutX="202.0" layoutY="61.0" styleClass="myLabel" text="Nom:" />
+                        <Label layoutX="202.0" layoutY="102.0" styleClass="myLabel" text="Montant à rembourser:" />
                         <ComboBox editable="true" layoutX="383.0" layoutY="16.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
-                        <TextField layoutX="377.0" layoutY="71.0" styleClass="myTextField" />
-                        <TextField layoutX="377.0" layoutY="125.0" styleClass="myTextField" />
+                        <TextField layoutX="377.0" layoutY="56.0" styleClass="myTextField" />
+                        <TextField layoutX="377.0" layoutY="97.0" styleClass="myTextField" />
                         <TableView layoutX="6.0" layoutY="196.0" prefHeight="129.0" prefWidth="590.0" styleClass="myTableView">
                           <columns>
-                            <TableColumn prefWidth="167.0" styleClass="myTableColumn" text="Type" />
-                            <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Nom" />
-                              <TableColumn prefWidth="206.0" styleClass="myTableColumn" text="Montant à rembourser:" />
+                            <TableColumn prefWidth="144.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="154.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="175.0" styleClass="myTableColumn" text="Montant à rembourser:" />
+                              <TableColumn prefWidth="116.0" text="intérêts (%)" />
                           </columns>
                         </TableView>
                         <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                         <Button layoutX="431.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                        <Label layoutX="202.0" layoutY="149.0" styleClass="myLabel" text="Pourcentage d'intérêt:" />
+                        <Slider layoutX="388.0" layoutY="149.0" styleClass="mySlider" />
                      </children>
                   </AnchorPane>
             </content>

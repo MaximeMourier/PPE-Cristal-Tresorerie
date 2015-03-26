@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Total des Ventes Année N">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="17.0" layoutY="21.0" prefHeight="300.0" prefWidth="567.0">
+                          <columns>
+                            <TableColumn prefWidth="168.0" text="Type" />
+                              <TableColumn prefWidth="191.0" text="Prix de vente" />
+                              <TableColumn minWidth="0.0" prefWidth="207.0" text="Quantité" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="17.0" layoutY="333.0" mnemonicParsing="false" text="Modifier" />
+                        <Button layoutX="105.0" layoutY="333.0" mnemonicParsing="false" text="Supprimer" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Ajouter une nouvelle vente">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="23.0" layoutY="140.0" mnemonicParsing="false" text="Ajouter" />
+                        <ComboBox editable="true" layoutX="389.0" layoutY="48.0" prefWidth="150.0" promptText="Choisissez" />
+                        <TextField layoutX="383.0" layoutY="119.0" />
+                        <TextField layoutX="383.0" layoutY="194.0" />
+                        <Label layoutX="177.0" layoutY="53.0" text="Type:" />
+                        <Label layoutX="177.0" layoutY="124.0" text="Recettes des ventes:" />
+                        <Label layoutX="177.0" layoutY="199.0" text="Quantité:" />
+                        <Button layoutX="529.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="438.0" layoutY="334.0" mnemonicParsing="false" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab styleClass="myTab" text="Activité annexe">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="54.0" layoutY="44.0" styleClass="myLabel" text="Prévoyez vous de réaliser des recettes sur une activité annexe?" />
+                        <RadioButton layoutX="54.0" layoutY="86.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="203.0" layoutY="86.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="54.0" layoutY="145.0" text="Si oui, indiquez le montant prévisionnel de ces recettes:" />
+                        <TextField layoutX="348.0" layoutY="184.0" styleClass="myTextField" />
+                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="432.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

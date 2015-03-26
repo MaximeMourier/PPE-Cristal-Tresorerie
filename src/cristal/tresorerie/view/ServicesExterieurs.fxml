@@ -4,52 +4,78 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
     <Tab styleClass="myTab" text="Sous traitance &amp; Marketing">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <Label layoutX="37.0" layoutY="26.0" styleClass="myLabel" text="Sous-traitez vous une partie de votre activité?" />
-                  <RadioButton layoutX="389.0" layoutY="26.0" mnemonicParsing="false" text="Oui" />
-                  <RadioButton layoutX="476.0" layoutY="26.0" mnemonicParsing="false" text="Non" />
-                  <Label layoutX="37.0" layoutY="71.0" text="Si oui, précisez le montant total ici:" />
-                  <TextField layoutX="362.0" layoutY="67.0" />
-                  <Label layoutX="37.0" layoutY="122.0" text="Consacrez vous une partie de vos fonds à des" />
-                  <RadioButton layoutX="389.0" layoutY="131.0" mnemonicParsing="false" text="Oui" />
-                  <RadioButton layoutX="476.0" layoutY="131.0" mnemonicParsing="false" text="Non" />
-                  <Label layoutX="37.0" layoutY="139.0" text="annonces, publicité, ou frais d'abonnements de revue?" />
-                  <Label layoutX="37.0" layoutY="175.0" text="Si oui, précisez le montant total ici:" />
-                  <TextField layoutX="362.0" layoutY="171.0" />
-                  <Label layoutX="37.0" layoutY="232.0" text="Participez vous a des forums, salons ou foires?" />
-                  <RadioButton layoutX="389.0" layoutY="231.0" mnemonicParsing="false" text="Oui" />
-                  <RadioButton layoutX="476.0" layoutY="231.0" mnemonicParsing="false" text="Non" />
-                  <Label layoutX="37.0" layoutY="274.0" text="Si oui, précisez le montant dépensé ici:" />
-                  <TextField layoutX="362.0" layoutY="269.0" />
-                  <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                  <RadioButton layoutX="389.0" layoutY="26.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="476.0" layoutY="26.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="37.0" layoutY="71.0" styleClass="myLabel" text="Si oui, précisez le montant total ici:" />
+                  <TextField layoutX="362.0" layoutY="67.0" styleClass="myTextField" />
+                  <Label layoutX="37.0" layoutY="122.0" styleClass="myLabel" text="Consacrez vous une partie de vos fonds à des" />
+                  <RadioButton layoutX="389.0" layoutY="131.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="476.0" layoutY="131.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="37.0" layoutY="139.0" styleClass="myLabel" text="annonces, publicité, ou frais d'abonnements de revue?" />
+                  <Label layoutX="37.0" layoutY="175.0" styleClass="myLabel" text="Si oui, précisez le montant total ici:" />
+                  <TextField layoutX="362.0" layoutY="171.0" styleClass="myTextField" />
+                  <Label layoutX="37.0" layoutY="232.0" styleClass="myLabel" text="Participez vous a des forums, salons ou foires?" />
+                  <RadioButton layoutX="389.0" layoutY="231.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="476.0" layoutY="231.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="37.0" layoutY="274.0" styleClass="myLabel" text="Si oui, précisez le montant dépensé ici:" />
+                  <TextField layoutX="362.0" layoutY="269.0" styleClass="myTextField" />
+                  <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                </children></AnchorPane>
       </content>
     </Tab>
+      <Tab styleClass="myTab" text="Contrats d'assurance">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="26.0" layoutY="23.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                  <Button layoutX="26.0" layoutY="78.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                  <Button layoutX="26.0" layoutY="139.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                  <Label layoutX="246.0" layoutY="28.0" styleClass="myLabel" text="Type:" />
+                  <Label layoutX="246.0" layoutY="83.0" styleClass="myLabel" text="Nom:" />
+                  <Label layoutX="246.0" layoutY="144.0" styleClass="myLabel" text="Prix:" />
+                  <ComboBox editable="true" layoutX="379.0" layoutY="23.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                  <TextField layoutX="373.0" layoutY="78.0" styleClass="myTextField" />
+                  <TextField layoutX="373.0" layoutY="139.0" styleClass="myTextField" />
+                  <TableView layoutX="9.0" layoutY="184.0" prefHeight="142.0" prefWidth="573.0" styleClass="myTableView">
+                    <columns>
+                      <TableColumn prefWidth="169.0" styleClass="myTableColumn" text="Type" />
+                      <TableColumn prefWidth="194.0" styleClass="myTableColumn" text="Nom" />
+                        <TableColumn prefWidth="209.0" styleClass="myTableColumn" text="Prix" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="529.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="440.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
     <Tab styleClass="myTab" text="Autres services extérieurs">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myTab">
                <children>
-                  <Label layoutX="29.0" layoutY="33.0" text="Avez vous obtenu un contrat de crédit bail?" />
-                  <RadioButton layoutX="402.0" layoutY="33.0" mnemonicParsing="false" text="Oui" />
-                  <RadioButton layoutX="510.0" layoutY="33.0" mnemonicParsing="false" text="Non" />
-                  <Label layoutX="29.0" layoutY="76.0" text="Si oui, saisissez le montant ici:" />
-                  <TextField layoutX="396.0" layoutY="72.0" />
-                  <Label layoutX="29.0" layoutY="134.0" text="Indiquez le montant total des autres frais liés a la location:" />
-                  <TextField layoutX="396.0" layoutY="129.0" />
-                  <Label layoutX="29.0" layoutY="184.0" text="Indiquez le montant total de vos frais bancaires mensuels:" />
-                  <TextField layoutX="396.0" layoutY="179.0" />
-                  <Label layoutX="29.0" layoutY="235.0" text="Avez vous eu d'autres frais liés à des services extérieurs?" />
-                  <RadioButton layoutX="402.0" layoutY="234.0" mnemonicParsing="false" text="Oui" />
-                  <RadioButton layoutX="510.0" layoutY="234.0" mnemonicParsing="false" text="Non" />
-                  <Label layoutX="29.0" layoutY="284.0" text="Si oui, saisissez le montant ici:" />
-                  <TextField layoutX="396.0" layoutY="279.0" />
-                  <Button layoutX="530.0" layoutY="333.0" mnemonicParsing="false" text="Suivant" />
-                  <Button layoutX="438.0" layoutY="333.0" mnemonicParsing="false" text="Précédent" />
+                  <Label layoutX="29.0" layoutY="33.0" styleClass="myLabel" text="Avez vous obtenu un contrat de crédit bail?" />
+                  <RadioButton layoutX="402.0" layoutY="33.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="510.0" layoutY="33.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="29.0" layoutY="76.0" styleClass="myLabel" text="Si oui, saisissez le montant ici:" />
+                  <TextField layoutX="396.0" layoutY="72.0" styleClass="myTextField" />
+                  <Label layoutX="29.0" layoutY="134.0" styleClass="myLabel" text="Indiquez le montant total des autres frais liés a la location:" />
+                  <TextField layoutX="396.0" layoutY="129.0" styleClass="myTextField" />
+                  <Label layoutX="29.0" layoutY="184.0" styleClass="myLabel" text="Indiquez le montant total de vos frais bancaires mensuels:" />
+                  <TextField layoutX="396.0" layoutY="179.0" styleClass="myTextField" />
+                  <Label layoutX="29.0" layoutY="235.0" styleClass="myLabel" text="Avez vous eu d'autres frais liés à des services extérieurs?" />
+                  <RadioButton layoutX="402.0" layoutY="234.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="510.0" layoutY="234.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="29.0" layoutY="284.0" styleClass="myLabel" text="Si oui, saisissez le montant ici:" />
+                  <TextField layoutX="396.0" layoutY="279.0" styleClass="myTextField" />
+                  <Button layoutX="530.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="438.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
                </children></AnchorPane>
       </content>
     </Tab>

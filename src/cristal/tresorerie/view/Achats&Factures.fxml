@@ -21,7 +21,7 @@
                         <ComboBox editable="true" layoutX="384.0" layoutY="22.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComBox" />
                         <TextField layoutX="378.0" layoutY="79.0" styleClass="myTextField" />
                         <TextField layoutX="378.0" layoutY="136.0" styleClass="myTextField" />
-                        <TableView layoutX="9.0" layoutY="184.0" prefHeight="125.0" prefWidth="579.0" styleClass="myTableView">
+                        <TableView layoutX="9.0" layoutY="182.0" prefHeight="143.0" prefWidth="579.0" styleClass="myTableView">
                           <columns>
                             <TableColumn prefWidth="158.0" styleClass="myTableColumn" text="Type" />
                             <TableColumn prefWidth="204.0" styleClass="myTableColumn" text="Nom" />
@@ -29,12 +29,11 @@
                           </columns>
                         </TableView>
                         <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button layoutX="434.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
                      </children>
                   </AnchorPane>
               </content>
             </Tab>
-          <Tab styleClass="myTab" text="Frais (Energie &amp; communication) ">
+          <Tab styleClass="myTab" text="Factures mensuelles (Energie &amp; communication) ">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="618.0" styleClass="myAnchorPane">
                      <children>
@@ -55,32 +54,7 @@
                           </columns>
                         </TableView>
                         <Button layoutX="531.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-          <Tab styleClass="myTab" text="Assurance (annuels)">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
-                     <children>
-                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
-                        <Button layoutX="25.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
-                        <Button layoutX="25.0" layoutY="123.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
-                        <Label layoutX="202.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
-                        <Label layoutX="202.0" layoutY="75.0" styleClass="myLabel" text="Nom:" />
-                        <Label layoutX="205.0" layoutY="129.0" styleClass="myLabel" text="Prix:" />
-                        <ComboBox editable="true" layoutX="355.0" layoutY="15.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
-                        <TextField layoutX="349.0" layoutY="70.0" styleClass="myTextField" />
-                        <TextField layoutX="349.0" layoutY="124.0" styleClass="myTextField" />
-                        <TableView layoutX="6.0" layoutY="167.0" prefHeight="158.0" prefWidth="590.0" styleClass="myTableView">
-                          <columns>
-                            <TableColumn prefWidth="167.0" styleClass="myTableColumn" text="Type" />
-                            <TableColumn prefWidth="216.0" styleClass="myTableColumn" text="Nom" />
-                              <TableColumn prefWidth="206.0" styleClass="myTableColumn" text="Prix" />
-                          </columns>
-                        </TableView>
-                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button layoutX="431.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                        <Button layoutX="439.0" layoutY="334.0" mnemonicParsing="false" text="Précédent" />
                      </children>
                   </AnchorPane>
             </content>
