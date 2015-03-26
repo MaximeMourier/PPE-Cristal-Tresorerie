@@ -46,26 +46,6 @@
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab styleClass="myTab" text="Sous-traitance &amp; Marketing">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
-                     <children>
-                        <Label layoutX="98.0" layoutY="32.0" styleClass="myLabel" text="Sous-traitez vous une partie de votre activité?" />
-                        <RadioButton layoutX="130.0" layoutY="81.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="362.0" layoutY="81.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Button layoutX="529.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button id="myButton" layoutX="433.0" layoutY="333.0" mnemonicParsing="false" text="Précédent" />
-                        <Label layoutX="98.0" layoutY="128.0" styleClass="myLabel" text="Si oui, précisez le montant total ici:" />
-                        <TextField layoutX="330.0" layoutY="123.0" styleClass="myTextField" />
-                        <Label layoutX="98.0" layoutY="184.0" text="Consacrez vous une partie de vos fonds à la communication &amp; publicité?" />
-                        <RadioButton layoutX="130.0" layoutY="240.0" mnemonicParsing="false" text="Oui" />
-                        <RadioButton layoutX="362.0" layoutY="240.0" mnemonicParsing="false" text="Non" />
-                        <Label layoutX="98.0" layoutY="283.0" text="Si oui, précisez le montant ici:" />
-                        <TextField layoutX="330.0" layoutY="278.0" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </Tab>
             <Tab text="Produits exceptionnels">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myTab">
@@ -114,23 +94,6 @@
                         </TableView>
                         <Button layoutX="528.0" layoutY="340.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                         <Button layoutX="432.0" layoutY="340.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </Tab>
-            <Tab text="Autres services extérieurs">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Label layoutX="46.0" layoutY="47.0" styleClass="myLabel" text="Avez vous eu des frais liés à vos locations (crédits bails, entretien, réparation etc)?" />
-                        <RadioButton layoutX="46.0" layoutY="88.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="175.0" layoutY="88.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Label layoutX="46.0" layoutY="138.0" styleClass="myLabel" text="Si oui, saisissez le montant global:" />
-                        <TextField layoutX="345.0" layoutY="133.0" styleClass="myTextField" />
-                        <Label layoutX="46.0" layoutY="203.0" styleClass="myLabel" text="Quel est le montant total (mensuel) de vos services bancaires?" />
-                        <TextField layoutX="345.0" layoutY="251.0" styleClass="myTextField" />
-                        <Button layoutX="532.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button layoutX="440.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
                      </children>
                   </AnchorPane>
               </content>
