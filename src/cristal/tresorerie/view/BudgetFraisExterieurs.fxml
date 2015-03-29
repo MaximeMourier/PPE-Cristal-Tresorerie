@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab styleClass="myTab" text="Loyers &amp; copropriété">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="36.0" layoutY="61.0" styleClass="myLabel" text="Montant total de vos loyers de l'année N-1:" />
+                  <Label layoutX="36.0" layoutY="101.0" styleClass="myLabel" text="Sachant ceci, saisissez votre budget loyer pour l'année suivante:" />
+                  <Label layoutX="36.0" layoutY="140.0" />
+                  <Label layoutX="36.0" layoutY="191.0" styleClass="myLabel" text="Si vous etes propriétaires de vos locaux," />
+                  <Label layoutX="36.0" layoutY="207.0" styleClass="myLabel" text="saisissez votre budget lié aux frais de copropriété annuels:" />
+                  <TextField layoutX="382.0" layoutY="56.0" styleClass="myTextField" />
+                  <TextField layoutX="382.0" layoutY="137.0" styleClass="myTextField" />
+                  <TextField layoutX="382.0" layoutY="231.0" styleClass="myTextField" />
+                  <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab styleClass="myTab" text="Assurances &amp; crédit bail">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="33.0" styleClass="myLabel" text="Montant total de vos contrats d'assurance de l'année N-1:" />
+                  <TextField layoutX="410.0" layoutY="28.0" styleClass="myTextField" />
+                  <Label layoutX="40.0" layoutY="83.0" styleClass="myLabel" text="Sachant ceci, saisissez votre budget assurance pour l'année suivante:" />
+                  <TextField layoutX="410.0" layoutY="110.0" styleClass="myTextField" />
+                  <Label layoutX="40.0" layoutY="168.0" styleClass="myLabel" text="Avez vous prévu de contracter un crédit bail cette année?" />
+                  <RadioButton layoutX="40.0" layoutY="209.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                  <RadioButton layoutX="247.0" layoutY="209.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <Label layoutX="40.0" layoutY="261.0" styleClass="myLabel" text="Si oui, saisissez le montant ici:" />
+                  <TextField layoutX="410.0" layoutY="256.0" styleClass="myTextField" />
+                  <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="434.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab styleClass="myTab" text="Autres frais extérieurs">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="65.0" styleClass="myLabel" text="Budget consacré à l'entretien des machines &amp; équipements:" />
+                  <TextField layoutX="415.0" layoutY="60.0" styleClass="myTextField" />
+                  <Label layoutX="41.0" layoutY="115.0" styleClass="myLabel" text="Budget publicité/relations publiques:" />
+                  <TextField layoutX="415.0" layoutY="110.0" styleClass="myTextField" />
+                  <Label layoutX="41.0" layoutY="170.0" styleClass="myLabel" text="Budget liés à des services de sociétés extérieures:" />
+                  <TextField layoutX="415.0" layoutY="165.0" styleClass="myTextField" />
+                  <Label layoutX="41.0" layoutY="231.0" styleClass="myLabel" text="Budget consacré aux frais bancaires:" />
+                  <TextField layoutX="415.0" layoutY="226.0" styleClass="myTextField" />
+                  <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="439.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

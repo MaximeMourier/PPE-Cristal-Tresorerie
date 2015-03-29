@@ -34,7 +34,7 @@
                         <Button layoutX="14.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
                         <Button layoutX="14.0" layoutY="115.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
                         <Label layoutX="245.0" layoutY="18.0" prefHeight="16.0" prefWidth="34.0" styleClass="myLabel" text="Type:" />
-                        <ComboBox editable="true" layoutX="380.0" layoutY="13.0" prefWidth="150.0" promptText="Choisissez un type" styleClass="myComboBox" />
+                        <ComboBox editable="true" layoutX="380.0" layoutY="13.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
                         <Label layoutX="246.0" layoutY="120.0" styleClass="myLabel" text="Valeur:" />
                         <TextField layoutX="374.0" layoutY="64.0" styleClass="myTextField" />
                         <TableView layoutX="4.0" layoutY="162.0" prefHeight="160.0" prefWidth="594.0" styleClass="myTableView">
@@ -64,7 +64,7 @@
                         <Label layoutX="181.0" layoutY="19.0" styleClass="myLabel" text="Type:" />
                         <Label layoutX="181.0" layoutY="57.0" styleClass="myLabel" text="Nom:" />
                         <Label layoutX="181.0" layoutY="147.0" styleClass="myLabel" text="Produit financier occasionné:" />
-                        <ComboBox editable="true" layoutX="385.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez un type" styleClass="myComboBox" />
+                        <ComboBox editable="true" layoutX="385.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
                         <TextField layoutX="379.0" layoutY="52.0" styleClass="myTextField" />
                         <TextField layoutX="379.0" layoutY="142.0" styleClass="myTextField" />
                         <TableView layoutX="4.0" layoutY="182.0" prefHeight="143.0" prefWidth="594.0" styleClass="myTableView">

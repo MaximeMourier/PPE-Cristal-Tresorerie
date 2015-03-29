@@ -18,8 +18,7 @@
                         <TextField layoutX="404.0" layoutY="39.0" />
                         <TextField layoutX="404.0" layoutY="113.0" />
                         <TextField layoutX="404.0" layoutY="181.0" />
-                        <Button layoutX="528.0" layoutY="327.0" mnemonicParsing="false" text="Suivant" />
-                        <Button layoutX="434.0" layoutY="327.0" mnemonicParsing="false" text="Précédent" />
+                        <Button layoutX="529.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
                         <Label layoutX="33.0" layoutY="257.0" text="Provisions pour dépenses imprévues:" />
                         <TextField layoutX="404.0" layoutY="252.0" />
                      </children>
@@ -30,21 +29,18 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="48.0" layoutY="43.0" text="Prévoyez-vous une augmentation de capital?" />
-                        <RadioButton layoutX="386.0" layoutY="42.0" mnemonicParsing="false" text="Oui" />
-                        <RadioButton layoutX="495.0" layoutY="42.0" mnemonicParsing="false" text="Non" />
-                        <Label layoutX="48.0" layoutY="83.0" text="Si oui, saisissez le montant:" />
-                        <TextField layoutX="246.0" layoutY="78.0" />
-                        <Label layoutX="48.0" layoutY="143.0" text="Prévoyez-vous de nouveaux emprunts?" />
-                        <RadioButton layoutX="386.0" layoutY="142.0" mnemonicParsing="false" text="Oui" />
-                        <RadioButton layoutX="495.0" layoutY="142.0" mnemonicParsing="false" text="Non" />
-                        <Label layoutX="48.0" layoutY="189.0" text="Si oui, saisissez le montant:" />
-                        <TextField layoutX="246.0" layoutY="184.0" />
-                        <Label layoutX="48.0" layoutY="258.0" text="Prévoyez-vous l'obtention de subventions?" />
-                        <RadioButton layoutX="386.0" layoutY="257.0" mnemonicParsing="false" text="Oui" />
-                        <RadioButton layoutX="495.0" layoutY="257.0" mnemonicParsing="false" text="Non" />
-                        <Label layoutX="48.0" layoutY="303.0" text="Si oui, saisissez le montant:" />
-                        <TextField layoutX="246.0" layoutY="298.0" />
+                        <Label layoutX="48.0" layoutY="64.0" text="Prévoyez-vous une augmentation de capital?" />
+                        <RadioButton layoutX="386.0" layoutY="63.0" mnemonicParsing="false" text="Oui" />
+                        <RadioButton layoutX="495.0" layoutY="63.0" mnemonicParsing="false" text="Non" />
+                        <Label layoutX="48.0" layoutY="104.0" text="Si oui, saisissez le montant:" />
+                        <TextField layoutX="246.0" layoutY="99.0" />
+                        <Label layoutX="48.0" layoutY="204.0" text="Prévoyez-vous l'obtention de subventions?" />
+                        <RadioButton layoutX="386.0" layoutY="203.0" mnemonicParsing="false" text="Oui" />
+                        <RadioButton layoutX="495.0" layoutY="203.0" mnemonicParsing="false" text="Non" />
+                        <Label layoutX="48.0" layoutY="249.0" text="Si oui, saisissez le montant:" />
+                        <TextField layoutX="246.0" layoutY="244.0" />
+                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="441.0" layoutY="334.0" mnemonicParsing="false" text="Précédent" />
                      </children></AnchorPane>
               </content>
             </Tab>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="myTab" text="Mes emprunts financiers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
+                     <children>
+                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Button layoutX="25.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                        <Button layoutX="25.0" layoutY="123.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                        <Label layoutX="202.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
+                        <Label layoutX="202.0" layoutY="61.0" styleClass="myLabel" text="Nom:" />
+                        <Label layoutX="202.0" layoutY="102.0" styleClass="myLabel" text="Montant à rembourser:" />
+                        <ComboBox editable="true" layoutX="383.0" layoutY="16.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <TextField layoutX="377.0" layoutY="56.0" styleClass="myTextField" />
+                        <TextField layoutX="377.0" layoutY="97.0" styleClass="myTextField" />
+                        <TableView layoutX="6.0" layoutY="196.0" prefHeight="129.0" prefWidth="590.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="144.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="154.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="175.0" styleClass="myTableColumn" text="Montant à rembourser:" />
+                              <TableColumn prefWidth="116.0" styleClass="myTableColumn" text="intérêts (%)" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Label layoutX="202.0" layoutY="149.0" styleClass="myLabel" text="Pourcentage d'intérêt:" />
+                        <Slider layoutX="388.0" layoutY="149.0" styleClass="mySlider" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="myTab" text="Remboursements anticipés &amp; Placements">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="40.0" layoutY="24.0" styleClass="myLabel" text="Prévoyez vous le remboursement anticipé de certains dettes" />
+                        <Label layoutX="40.0" layoutY="40.0" styleClass="myLabel" text="dans le but d'obtenir des réductions?" />
+                        <RadioButton layoutX="40.0" layoutY="80.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="255.0" layoutY="80.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="40.0" layoutY="124.0" styleClass="myLabel" text="Si oui, précisez le montant de ces réductions:" />
+                        <TextField layoutX="397.0" layoutY="119.0" styleClass="myTextField" />
+                        <Label layoutX="40.0" layoutY="186.0" styleClass="myLabel" text="Avez vous prévu d'effectuer un placement financier?" />
+                        <Label layoutX="40.0" layoutY="202.0" styleClass="myLabel" text="(Exemple: livret d'épargne, PEA..)" />
+                        <RadioButton layoutX="40.0" layoutY="237.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="255.0" layoutY="237.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="40.0" layoutY="281.0" styleClass="myLabel" text="Si oui, indiquez le montant estimé des recettes générées:" />
+                        <TextField layoutX="397.0" layoutY="276.0" styleClass="myTextField" />
+                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="439.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

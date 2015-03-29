@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab styleClass="myTab" text="Produits exceptionnels">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="61.0" styleClass="myLabel" text="Voici le montant total de vos produits exceptionnels de l'année N-1:" />
+                  <TextField layoutX="385.0" layoutY="94.0" styleClass="myTextField" />
+                  <Label layoutX="33.0" layoutY="168.0" styleClass="myLabel" text="Sachant ceci, indiquez votre estimation de produits exceptionnels pour l'anéee suivante:" />
+                  <TextField layoutX="385.0" layoutY="204.0" styleClass="myTextField" />
+                  <Button layoutX="526.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab styleClass="myTab" text="Charges exceptionnelles &amp; impayés">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="36.0" layoutY="51.0" styleClass="myLabel" text="Voici le montant total de vos charges exceptionnelles de l'année N-1:" />
+                  <TextField layoutX="391.0" layoutY="82.0" styleClass="myTextField" />
+                  <Label layoutX="36.0" layoutY="134.0" text="Sachant ceci, indiquez votre estimation de produits exceptionnels pour l'anéee suivante:" />
+                  <TextField layoutX="391.0" layoutY="171.0" styleClass="myTextField" />
+                  <Label layoutX="36.0" layoutY="224.0" text="De combien estimez vous vos pertes liées aux créances clients impayées?" />
+                  <TextField layoutX="391.0" layoutY="264.0" styleClass="myTextField" />
+                  <Button layoutX="527.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="437.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

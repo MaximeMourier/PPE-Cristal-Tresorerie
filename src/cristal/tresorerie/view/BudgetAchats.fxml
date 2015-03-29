@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab styleClass="myTab" text="Coût de production">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="600.0">
+                     <children>
+                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Label layoutX="35.0" layoutY="19.0" styleClass="myLabel" text="Coût matières premières année N-1:" />
+                        <Label layoutX="35.0" layoutY="59.0" styleClass="myLabel" text="Frais totaux d'emballage &amp; packaging année N-1:" />
+                        <Label layoutX="35.0" layoutY="102.0" styleClass="myLabel" text="Coût de production total (hors Main d'oeuvre):" />
+                        <TextField layoutX="390.0" layoutY="14.0" styleClass="myTextField" />
+                        <TextField layoutX="390.0" layoutY="54.0" styleClass="myTextField" />
+                        <TextField layoutX="390.0" layoutY="97.0" styleClass="myTextField" />
+                        <Label layoutX="35.0" layoutY="150.0" styleClass="myLabel" text="Sachant ceci, saisissez  les montants désirés pour l'année suivante:" />
+                        <TextField layoutX="390.0" layoutY="182.0" styleClass="myTextField" />
+                        <TextField layoutX="390.0" layoutY="226.0" styleClass="myTextField" />
+                        <TextField layoutX="390.0" layoutY="269.0" styleClass="myTextField" />
+                        <Label layoutX="35.0" layoutY="187.0" styleClass="myLabel" text="Coût matières premières année N:" />
+                        <Label layoutX="35.0" layoutY="231.0" styleClass="myLabel" text="Frais totaux d'emballage &amp; packaging année N:" />
+                        <Label layoutX="35.0" layoutY="274.0" styleClass="myLabel" text="Coût de production total (hors Main d'oeuvre):" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab styleClass="myTab" text="Factures mensuelles (Energie &amp; communication) ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="618.0" styleClass="myAnchorPane">
+                     <children>
+                        <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
+                        <Button layoutX="23.0" layoutY="68.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
+                        <Button layoutX="23.0" layoutY="122.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
+                        <Label layoutX="197.0" layoutY="19.0" styleClass="myLabel" text="Type:" />
+                        <Label layoutX="197.0" layoutY="73.0" styleClass="myLabel" text="Nom (ex: Facture EDF):" />
+                        <Label layoutX="197.0" layoutY="127.0" styleClass="myLabel" text="Prix:" />
+                        <ComboBox editable="true" layoutX="374.0" layoutY="14.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                        <TextField layoutX="368.0" layoutY="68.0" styleClass="myTextField" />
+                        <TextField layoutX="368.0" layoutY="122.0" styleClass="myTextField" />
+                        <TableView layoutX="4.0" layoutY="169.0" prefHeight="158.0" prefWidth="592.0" styleClass="myTableView">
+                          <columns>
+                            <TableColumn prefWidth="171.0" styleClass="myTableColumn" text="Type" />
+                            <TableColumn prefWidth="201.0" styleClass="myTableColumn" text="Nom" />
+                              <TableColumn prefWidth="219.0" styleClass="myTableColumn" text="Prix" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="531.0" layoutY="334.0" mnemonicParsing="false" text="Suivant" />
+                        <Button layoutX="439.0" layoutY="334.0" mnemonicParsing="false" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="myTab" text="Sous-traitance">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="41.0" layoutY="40.0" styleClass="myLabel" text="Prévoyez vous d'acheter un service de sous-traitance cette année?" />
+                        <RadioButton layoutX="41.0" layoutY="83.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
+                        <RadioButton layoutX="231.0" layoutY="83.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                        <Label layoutX="41.0" layoutY="143.0" styleClass="myLabel" text="Si oui, précisez le montant total:" />
+                        <TextField layoutX="357.0" layoutY="138.0" styleClass="myTextField" />
+                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                        <Button layoutX="439.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
