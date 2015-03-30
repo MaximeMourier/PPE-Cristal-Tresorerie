@@ -1,64 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab styleClass="myTab" text="Mes emprunts financiers">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="myAnchorPane">
-                     <children>
-                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" />
-                        <Button layoutX="25.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" />
-                        <Button layoutX="25.0" layoutY="123.0" mnemonicParsing="false" styleClass="myButton" text="Supprimer" />
-                        <Label layoutX="202.0" layoutY="20.0" styleClass="myLabel" text="Type:" />
-                        <Label layoutX="202.0" layoutY="61.0" styleClass="myLabel" text="Nom:" />
-                        <Label layoutX="202.0" layoutY="102.0" styleClass="myLabel" text="Montant à rembourser:" />
-                        <ComboBox editable="true" layoutX="383.0" layoutY="16.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
-                        <TextField layoutX="377.0" layoutY="56.0" styleClass="myTextField" />
-                        <TextField layoutX="377.0" layoutY="97.0" styleClass="myTextField" />
-                        <TableView layoutX="6.0" layoutY="196.0" prefHeight="129.0" prefWidth="590.0" styleClass="myTableView">
-                          <columns>
-                            <TableColumn prefWidth="144.0" styleClass="myTableColumn" text="Type" />
-                            <TableColumn prefWidth="154.0" styleClass="myTableColumn" text="Nom" />
-                              <TableColumn prefWidth="175.0" styleClass="myTableColumn" text="Montant à rembourser:" />
-                              <TableColumn prefWidth="116.0" styleClass="myTableColumn" text="intérêts (%)" />
-                          </columns>
-                        </TableView>
-                        <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Label layoutX="202.0" layoutY="149.0" styleClass="myLabel" text="Pourcentage d'intérêt:" />
-                        <Slider layoutX="388.0" layoutY="149.0" styleClass="mySlider" />
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-            <Tab styleClass="myTab" text="Remboursements anticipés &amp; Placements">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Label layoutX="40.0" layoutY="24.0" styleClass="myLabel" text="Prévoyez vous le remboursement anticipé de certains dettes" />
-                        <Label layoutX="40.0" layoutY="40.0" styleClass="myLabel" text="dans le but d'obtenir des réductions?" />
-                        <RadioButton layoutX="40.0" layoutY="80.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="255.0" layoutY="80.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Label layoutX="40.0" layoutY="124.0" styleClass="myLabel" text="Si oui, précisez le montant de ces réductions:" />
-                        <TextField layoutX="397.0" layoutY="119.0" styleClass="myTextField" />
-                        <Label layoutX="40.0" layoutY="186.0" styleClass="myLabel" text="Avez vous prévu d'effectuer un placement financier?" />
-                        <Label layoutX="40.0" layoutY="202.0" styleClass="myLabel" text="(Exemple: livret d'épargne, PEA..)" />
-                        <RadioButton layoutX="40.0" layoutY="237.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" />
-                        <RadioButton layoutX="255.0" layoutY="237.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
-                        <Label layoutX="40.0" layoutY="281.0" styleClass="myLabel" text="Si oui, indiquez le montant estimé des recettes générées:" />
-                        <TextField layoutX="397.0" layoutY="276.0" styleClass="myTextField" />
-                        <Button layoutX="528.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
-                        <Button layoutX="439.0" layoutY="334.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </Tab>
-        </tabs>
-      </TabPane>
-   </children>
-</Pane>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+      <Tab text="Mes emprunts financiers">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="70.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" AnchorPane.bottomAnchor="594.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1050.0" AnchorPane.topAnchor="127.0" />
+                  <Button layoutX="68.0" layoutY="209.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Supprimer" AnchorPane.bottomAnchor="512.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1050.0" AnchorPane.topAnchor="209.0" />
+                  <Button layoutX="67.0" layoutY="55.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" AnchorPane.bottomAnchor="666.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="55.0" />
+                  <Label layoutX="301.0" layoutY="32.0" styleClass="myLabel" text="Nom:" AnchorPane.leftAnchor="301.0" />
+                  <Label layoutX="301.0" layoutY="89.0" styleClass="myLabel" text="Date de départ:" AnchorPane.leftAnchor="301.0" />
+                  <Label layoutX="301.0" layoutY="149.0" styleClass="myLabel" text="Durée (années):" AnchorPane.leftAnchor="301.0" />
+                  <TableView layoutX="74.0" layoutY="344.0" prefHeight="337.0" prefWidth="636.0">
+                     <columns>
+                        <TableColumn prefWidth="137.9248275756836" text="Nom" />
+                        <TableColumn prefWidth="133.62530517578125" text="Date de départ" />
+                        <TableColumn prefWidth="95.29574584960938" text="Durée" />
+                        <TableColumn prefWidth="135.582763671875" text="Montant" />
+                        <TableColumn prefWidth="131.417236328125" text="Intérêts (%)" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="81.0" layoutY="291.0" styleClass="myLabel" text="Tableau récapitulatif:" />
+                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="11. Budget frais extérieurs" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="12. Budget Exceptionnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
+                  <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <TextField layoutX="544.0" layoutY="27.0" styleClass="myTextField" AnchorPane.leftAnchor="544.0" />
+                  <TextField layoutX="544.0" layoutY="144.0" AnchorPane.leftAnchor="544.0" />
+                  <DatePicker layoutX="530.0" layoutY="86.0" />
+                  <Label layoutX="301.0" layoutY="216.0" styleClass="myLabel" text="Montant:" AnchorPane.leftAnchor="301.0" />
+                  <TextField layoutX="544.0" layoutY="211.0" styleClass="myTextField" AnchorPane.leftAnchor="544.0" />
+                  <Label layoutX="301.0" layoutY="271.0" styleClass="myLabel" text="Taux d'intérêts (%):" />
+                  <TextField layoutX="544.0" layoutY="266.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Mes Placements ">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="11. Budget frais extérieurs" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="12. Budget Exceptionnel" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
+                  <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
+                  <Button layoutX="544.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
+                  <TextField layoutX="505.0" layoutY="336.0" styleClass="myTextField" AnchorPane.leftAnchor="505.0" />
+                  <Label layoutX="75.0" layoutY="341.0" styleClass="myLabel" text="Si oui, indiquez le montant estimé des recettes générées:" AnchorPane.leftAnchor="75.0" />
+                  <RadioButton layoutX="265.0" layoutY="247.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" />
+                  <RadioButton layoutX="50.0" layoutY="247.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" AnchorPane.leftAnchor="70.0" />
+                  <Label layoutX="50.0" layoutY="212.0" styleClass="myLabel" text="(Exemple: livret d'épargne, PEA..)" AnchorPane.leftAnchor="70.0" />
+                  <Label layoutX="50.0" layoutY="196.0" styleClass="myLabel" text="Avez vous prévu d'effectuer un placement financier?" AnchorPane.leftAnchor="70.0" />
+                  <Label layoutX="56.0" layoutY="113.0" styleClass="myLabel" text="BUDGET DE RESULTAT FINANCIER" AnchorPane.leftAnchor="70.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -4,12 +4,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
   <tabs>
-      <Tab text="Budget Activité exceptionnelle">
+      <Tab text="Onglet 1">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
+                  <Button layoutX="70.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Modifier" AnchorPane.bottomAnchor="594.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1050.0" AnchorPane.topAnchor="127.0" />
+                  <Button layoutX="68.0" layoutY="209.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Supprimer" AnchorPane.bottomAnchor="512.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1050.0" AnchorPane.topAnchor="209.0" />
+                  <Button layoutX="67.0" layoutY="55.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" styleClass="myButton" text="Ajouter" AnchorPane.bottomAnchor="666.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="55.0" />
+                  <Label layoutX="289.0" layoutY="60.0" styleClass="myLabel" text="Type:" />
+                  <Label layoutX="288.0" layoutY="132.0" styleClass="myLabel" text="Nom:" />
+                  <Label layoutX="290.0" layoutY="214.0" styleClass="myLabel" text="Montant de la facture:" />
+                  <ComboBox editable="true" layoutX="549.0" layoutY="51.0" prefWidth="150.0" promptText="Choisissez" styleClass="myComboBox" />
+                  <TextField layoutX="543.0" layoutY="126.0" styleClass="myTextField" />
+                  <TextField layoutX="545.0" layoutY="208.0" styleClass="myTextField" />
+                  <TableView layoutX="74.0" layoutY="344.0" prefHeight="337.0" prefWidth="636.0">
+                    <columns>
+                      <TableColumn prefWidth="192.83238983154297" text="Type" />
+                      <TableColumn prefWidth="229.16758728027344" text="Nom" />
+                        <TableColumn prefWidth="213.98558044433594" text="Montant" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="81.0" layoutY="291.0" styleClass="myLabel" text="Tableau récapitulatif:" />
                   <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
                   <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
                   <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
@@ -26,18 +43,6 @@
                   <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
                   <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                   <Button layoutX="544.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" />
-                  <TextField layoutX="496.0" layoutY="264.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" />
-                  <Label layoutX="63.0" layoutY="213.0" styleClass="myLabel" text="Sachant ceci, indiquez votre estimation de produits exceptionnels pour l'année suivante:" AnchorPane.leftAnchor="70.0" />
-                  <Label layoutX="66.0" layoutY="126.0" styleClass="myLabel" text="Voici le montant total de vos produits exceptionnels de l'année N-1:" AnchorPane.leftAnchor="70.0" />
-                  <Label layoutX="78.0" layoutY="58.0" text="PRODUITS EXCEPTIONNELS" AnchorPane.leftAnchor="70.0" />
-                  <Label layoutX="561.0" layoutY="126.0" styleClass="myLabel" />
-                  <TextField layoutX="448.0" layoutY="611.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" />
-                  <Label layoutX="93.0" layoutY="571.0" text="De combien estimez vous vos pertes liées aux créances clients impayées?" AnchorPane.leftAnchor="70.0" />
-                  <TextField layoutX="529.0" layoutY="526.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" />
-                  <Label layoutX="93.0" layoutY="481.0" text="Sachant ceci, indiquez votre estimation de produits exceptionnels pour l'anéee suivante:" AnchorPane.leftAnchor="70.0" />
-                  <Label layoutX="93.0" layoutY="398.0" styleClass="myLabel" text="Voici le montant total de vos charges exceptionnelles de l'année N-1:" AnchorPane.leftAnchor="70.0" />
-                  <Label layoutX="567.0" layoutY="398.0" styleClass="myLabel" />
-                  <Label layoutX="85.0" layoutY="331.0" text="CHARGES EXCEPTIONNELLES" AnchorPane.leftAnchor="70.0" />
                </children>
             </AnchorPane>
         </content>
