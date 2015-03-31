@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -13,33 +14,36 @@
                   <Label layoutX="81.0" layoutY="55.0" styleClass="myLabel" text="Sous-traitez vous une partie de votre activité ? : " AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="60.0" />
                   <Label layoutX="81.0" layoutY="130.0" styleClass="myLabel" text="Si oui, précisez le montant total ici : " AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="140.0" />
                   <Label layoutX="81.0" layoutY="212.0" styleClass="myLabel" text="Consacrez-vous une partie de vos fonds à des annonces, publicités ou frais d'abonnement à une revue ? :" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="295.0" />
-                  <TextField layoutX="419.0" layoutY="128.0" styleClass="myTextField" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="140.0" />
-                  <TextField layoutX="419.0" layoutY="287.0" styleClass="myTextField" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="375.0" />
+                  <TextField layoutX="419.0" layoutY="128.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="140.0" />
+                  <TextField layoutX="419.0" layoutY="287.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="375.0" />
                   <Label layoutX="98.0" layoutY="291.0" styleClass="myLabel" text="Si oui, précisez le montant ici : " AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="375.0" />
-                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="11. Budget frais extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="12. Budget Exceptionnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
+                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="12. Budget frais extérieurs" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="13. Budget Exceptionnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="14. Budget gestion financière" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
                   <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                   <RadioButton layoutX="317.0" layoutY="91.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="90.0" />
                   <RadioButton layoutX="524.0" layoutY="91.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="90.0" />
                   <RadioButton layoutX="294.0" layoutY="240.0" mnemonicParsing="false" styleClass="myRadionButton" text="Oui" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="325.0" />
                   <RadioButton layoutX="503.0" layoutY="240.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="325.0" />
-                  <TextField layoutX="400.0" layoutY="600.0" styleClass="myTextField" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="600.0" />
+                  <TextField layoutX="400.0" layoutY="600.0" styleClass="myTextField" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="600.0" />
                   <RadioButton layoutX="274.0" layoutY="403.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="550.0" />
                   <RadioButton layoutX="494.0" layoutY="403.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="550.0" />
                   <Label layoutX="81.0" layoutY="367.0" styleClass="myLabel" text="Participez vous à des forums, salons ou foire ? :" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="520.0" />
-                  <Label layoutX="70.0" layoutY="604.0" styleClass="myLabel" text="Si oui, précisez le montant des dépenses associées ici :" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="600.0" />
+                  <Label layoutX="70.0" layoutY="604.0" styleClass="myLabel" text="Si oui, précisez le montant des dépenses associées ici:" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="600.0" />
                </children>
             </AnchorPane>
         </content>
@@ -48,20 +52,23 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="11. Budget frais extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="12. Budget Exceptionnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
+                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="12. Budget frais extérieurs" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="13. Budget Exceptionnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="14. Budget gestion financière" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
                   <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                   <Button layoutX="564.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Précédent" AnchorPane.leftAnchor="545.0" />
                   <Button layoutX="69.0" layoutY="52.0" mnemonicParsing="false" styleClass="myButton" text="Ajouter" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="60.0" />
@@ -94,20 +101,23 @@
                   <TextField layoutX="419.0" layoutY="128.0" styleClass="myTextField" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="140.0" />
                   <TextField layoutX="419.0" layoutY="287.0" styleClass="myTextField" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="375.0" />
                   <Label layoutX="98.0" layoutY="291.0" styleClass="myLabel" text="Indiquez le montant total de vos frais bancaires mensuels : " AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="375.0" />
-                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="11. Budget frais extérieurs" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="12. Budget Exceptionnel" AnchorPane.leftAnchor="881.0" />
-                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="13. Budget gestion financière" />
+                  <Label layoutX="881.0" layoutY="35.0" styleClass="myLabel" text="1. Informations de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="82.0" styleClass="myLabel" text="2. Valeur de l'entreprise" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="132.0" styleClass="myLabel" text="3. Dettes et créances" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="178.0" styleClass="myLabel" text="4. Achats et factures" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="223.0" styleClass="myLabel" text="5. Ventes et activité exceptionnelle" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="271.0" styleClass="myLabel" text="6. Personnel" textFill="#059a05" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="323.0" styleClass="myLabel" text="7. Services extérieurs" AnchorPane.leftAnchor="881.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label layoutX="881.0" layoutY="378.0" styleClass="myLabel" text="8. Budget ventes" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="429.0" styleClass="myLabel" text="9. Budget achats" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="483.0" styleClass="myLabel" text="10. Budget personnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="537.0" styleClass="myLabel" text="11. Budget investissements" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="587.0" styleClass="myLabel" text="12. Budget frais extérieurs" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="881.0" layoutY="637.0" styleClass="myLabel" text="13. Budget Exceptionnel" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
+                  <Label layoutX="885.0" layoutY="688.0" styleClass="myLabel" text="14. Budget gestion financière" textFill="#00000080" AnchorPane.leftAnchor="881.0" />
                   <Button layoutX="644.0" layoutY="708.0" mnemonicParsing="false" styleClass="myButton" text="Suivant" />
                   <RadioButton layoutX="317.0" layoutY="91.0" mnemonicParsing="false" styleClass="myRadioButton" text="Oui" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="90.0" />
                   <RadioButton layoutX="524.0" layoutY="91.0" mnemonicParsing="false" styleClass="myRadioButton" text="Non" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="90.0" />
